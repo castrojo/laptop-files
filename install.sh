@@ -7,9 +7,9 @@
 set -e
 [ "$UID" -eq 0 ] || { echo "This script must be run as root."; exit 1;} # Need to figure out how to pkexec so we only ask for the password once.
 
-snap install chromium communitheme darktable discord docker fast firefox gimp gitkraken gmusic gnome-calculator google-play-music-desktop-player google-webapp gotop htop hugo inkscape irssi libreoffice lxd mailspring musescore mutt obs-studio sdlpop signal-desktop snappy-debug spotify vidcutter vlc youtube-dl-casept
+snap install chromium darktable discord docker fast firefox gimp htop hugo inkscape libreoffice lxd mailspring obs-studio signal-desktop vlc youtube-dl-casept krita youtube-music-desktop-app bluemail
 
-CLASSICREQPKGS=(android-studio atom blender vscode sublime-text restic node intellij-idea-community hollywood go google-cloud-sdk kubectl)
+CLASSICREQPKGS=(blender code restic node go kubectl slack skype)
 
 for pkg in "${CLASSICREQPKGS[@]}"; do
         snap install "$pkg" --classic && echo "Successfully installed $pkg"
