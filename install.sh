@@ -7,7 +7,7 @@
 set -e
 [ "$UID" -eq 0 ] || { echo "This script must be run as root."; exit 1;} # Need to figure out how to pkexec so we only ask for the password once.
 
-snap install chromium darktable discord docker fast firefox gimp htop hugo inkscape libreoffice lxd obs-studio signal-desktop vlc youtube-dl krita youtube-music-desktop-app prospect-mail zoom-client barrier
+snap install chromium darktable discord docker fast gimp htop hugo inkscape libreoffice obs-studio signal-desktop vlc youtube-dl krita prospect-mail zoom-client mailspring 1password
 
 CLASSICREQPKGS=(blender code restic node go kubectl slack skype)
 
