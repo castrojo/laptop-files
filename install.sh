@@ -7,7 +7,7 @@
 set -e
 [ "$UID" -eq 0 ] || { echo "This script must be run as root."; exit 1;} # Need to figure out how to pkexec so we only ask for the password once.
 
-snap install chromium darktable discord docker fast gimp htop hugo inkscape libreoffice obs-studio signal-desktop vlc youtube-dl krita prospect-mail zoom-client mailspring
+snap install chromium discord docker fast flameshot glimpse-editor htop inkscape libreoffice obs-studio signal-desktop vlc youtube-dl krita prospect-mail zoom-client hey-mail
 
 snap install 1password --beta
 
@@ -18,6 +18,6 @@ for pkg in "${CLASSICREQPKGS[@]}"; do
 done
 
 sudo apt update 
-sudo apt install -y git zsh flameshot build-essential steam wireguard-dkms zfsutils-linux flatpak network-manager-openconnect-gnome variety
+sudo apt install -y git zsh build-essential steam zfsutils-linux flatpak network-manager-openconnect-gnome variety
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
