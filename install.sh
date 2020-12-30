@@ -7,7 +7,7 @@
 set -e
 [ "$UID" -eq 0 ] || { echo "This script must be run as root."; exit 1;} # Need to figure out how to pkexec so we only ask for the password once.
 
-snap install chromium discord fast flameshot glimpse-editor htop inkscape libreoffice obs-studio signal-desktop vlc youtube-dl krita prospect-mail zoom-client hey-mail sound-switcher-indicator
+snap install chromium discord fast flameshot glimpse-editor htop inkscape libreoffice obs-studio signal-desktop vlc youtube-dl krita prospect-mail zoom-client hey-mail indicator-sound-switcher
 
 snap install 1password --edge
 
